@@ -1,0 +1,29 @@
+.hero__tittle{
+    margin-bottom: 8px;
+    font-weight: 800;    
+    line-height: 130%;    
+    letter-spacing: 0.03em;
+    color: var(--background-color);
+    @media screen and (max-width: 767px) {        
+        font-size: 20px;
+    }
+    @media screen and (min-width: 768px) {
+        font-size: 26px;
+    }
+        @media screen and (min-width: 1366px) {
+            font-size: 58px;
+        }
+}
+.hero-text{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;     
+    letter-spacing: 0.08em;    
+    @media screen and (min-width: 1366px) {
+        font-size: 20px;
+        line-height: 164.9%;
+    }
+}
+.hero-text__accept{
+    color: var(--secondary-text-color);
+}
