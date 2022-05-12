@@ -1,11 +1,9 @@
-<header>
-  <div class="container">
-    <a href="">
+<header class="header">
+  <div class="container header__container">
       <a href="">
-        <img src="./images/logo.svg" alt="site logo" />
+        <img class="header__logo" src="./images/logo_black.svg" alt="site logo" />
       </a>
-    </a>
-    <nav>
+    <nav class="header__nav">
       <ul>
         <li>
           <a href="">Studying program</a>
@@ -21,13 +19,16 @@
         </li>
       </ul>
     </nav>
-    <button type="button">Consultation by phone</button>
-  </div>
+    <div>
+    <button class="header__btn" type="button">Consultation by phone</button>
   <button type="button" class="mobile-menu-btn" data-menu-open>
-    <svg width="20" height="12" class="mobile-menu-btn__icon">
+    <svg width="21" height="12" class="mobile-menu-btn__icon">
       <use href="./images/icons.svg#icon-menu"></use>
     </svg>
   </button>
+    </div>
+  </div>
+
   <div class="mobile-menu" data-menu>
     <div class="container mobile-menu__container">
         <button type="button" class="mobile-menu__close-btn" data-menu-close>
@@ -36,24 +37,26 @@
           </svg>
         </button>
         <a href="">
-            <img src="./images/logo.svg" alt="site logo" />
+            <img class="mobile-menu__logo" src="./images/logo_white.svg" alt="site logo" />
         </a>
-        <nav>
+        <nav class="mobile-menu__nav">
           <ul>
             <li>
-              <a href="">Studying program</a>
+              <a class="mobile-menu__link" href="">Studying program</a>
             </li>
             <li>
-              <a href="">About</a>
+              <a class="mobile-menu__link" href="">About</a>
             </li>
             <li>
-              <a href="">Training options</a>
+              <a class="mobile-menu__link" href="">Training options</a>
             </li>
             <li>
-              <a href="">Contacts</a>
+              <a class="mobile-menu__link" href="">Contacts</a>
             </li>
           </ul>
         </nav>
-        <button type="button">Consultation by phone</button>
+        <div class="mobile-menu__wrapper">
+        <button class="mobile-menu__modal-btn" type="button">Consultation by phone</button>
+      </div>
   </div>
 </header>
