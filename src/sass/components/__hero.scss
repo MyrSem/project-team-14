@@ -107,25 +107,25 @@
         height: 718px;
     }
 }
-// .overlay{
-//     position: absolute;
-//     width: 100%;
-//     height: 10px;
-//     bottom: 10px;
-//     left: 0;
-//     background-size: cover;
-//     background-repeat: no-repeat;
-//     background-position: center;    
-//     background-image: url('/image/bitch.jpg');
-//     background: #FFFFFF;
-//     box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
-//     // @media screen and(max-width:767px) {
-//     //     background-image: url('/image/Vector.jpg');
-//     //     @media (min-device-pixel-ratio: 2),
-//     //         (min-resolution: 192dpi),
-//     //         (min-resolution: 2dppx) {                
-//     //             background-image: url('/image/mobile-hero-bg@2x.jpg');                
-//     //         }
-//     // }    
-// }
+.overlay{
+    position: absolute;
+    width: 480px;
+    height: 100px;
+    bottom: 10px;
+    left: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;    
+    background-image: url('/image/bitch.jpg');
+    background-color: #E5E5E5;
+    box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+    // @media screen and(max-width:767px) {
+    //     background-image: url('/image/Vector.jpg');
+    //     @media (min-device-pixel-ratio: 2),
+    //         (min-resolution: 192dpi),
+    //         (min-resolution: 2dppx) {                
+    //             background-image: url('/image/mobile-hero-bg@2x.jpg');                
+    //         }
+    // }    
+}
 
