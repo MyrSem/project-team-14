@@ -1,8 +1,14 @@
 .section.problems {
+<<<<<<< Updated upstream
 background-color: black;
 padding-top: 24px;
 background-image: linear-gradient(0deg, var(--white-color) 0% 23%, var(--black-color) 23% 77% );
 
+=======
+  background-color: black;
+  padding-top: 24px;
+  background-image: linear-gradient(0deg, var(--white-color) 0% 23%, var(--black-color) 23% 77%);
+>>>>>>> Stashed changes
 }
 
 .problems__title {
@@ -27,7 +33,11 @@ background-image: linear-gradient(0deg, var(--white-color) 0% 23%, var(--black-c
   flex-wrap: wrap;
 }
 
+<<<<<<< Updated upstream
 .problems__item{
+=======
+.problems__item {
+>>>>>>> Stashed changes
   margin-bottom: 16px;
 }
 
@@ -35,7 +45,10 @@ background-image: linear-gradient(0deg, var(--white-color) 0% 23%, var(--black-c
   margin-bottom: 0px;
 }
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 .problems__item-title {
   margin-bottom: 5px;
   @include font(700, 14px, 17px, 0.08em);
@@ -50,6 +63,7 @@ background-image: linear-gradient(0deg, var(--white-color) 0% 23%, var(--black-c
   @include font(700, 14px, 24px, 0.08em);
 }
 
+<<<<<<< Updated upstream
 
 
 
@@ -57,3 +71,76 @@ background-image: linear-gradient(0deg, var(--white-color) 0% 23%, var(--black-c
 
 
 
+=======
+// ====768+ =====
+@media screen and (min-width: 768px) {
+  .problems__title {
+    margin-bottom: 37px;
+    width: 424px;
+    @include font(800, 24px, 31px, 0.03em);
+  }
+
+  .problems__list-box {
+    padding: 32px 80px;
+  }
+
+  .problems__item {
+    width: 216px;
+    height: auto;
+    margin-bottom: 24px;
+    margin-right: 40px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+// ====1680+ =====
+@media screen and (min-width: 1680px) {
+  .problems__title {
+    width: 866px;
+    margin-bottom: 80px;
+    @include font(800, 46px, 60px, 0.03em);
+  }
+
+  .problems__list-box {
+    padding: 60px 140px;
+  }
+
+  .problems__item {
+    width: 336px;
+    height: auto;
+    margin-bottom: 24px;
+    margin-right: 164px;
+
+    &:nth-child(2n) {
+      margin-right: 164px;
+    }
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0px;
+    }
+  }
+
+  .problems__item-title {
+    margin-bottom: 8px;
+    @include font(700, 20px, 33px, 0.08em);
+    color: var(--brand-color);
+  }
+
+  .problems__item-title__dash {
+    @include font(700, 20px, 33px, 0.08em);
+  }
+
+  .problems__item-text {
+    @include font(700, 20px, 24px, 0.08em);
+  }
+}
+>>>>>>> Stashed changes
