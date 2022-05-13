@@ -1,5 +1,78 @@
 @media screen and(min-width:0px) and(max-width:767.9px) {
 .about__title{
     margin-bottom: 20px;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
 }
+
+.about-wrapper__img{
+    margin-bottom: 20px;
+}
+
+.about-wrapper__title{
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.08em;
+    color: var(--primary-text-color);
+    padding-bottom: 8px;
+    border-bottom: 1px solid #B9B9B9;
+    margin-bottom: 20px;
+}
+
+.about-wrapper__item{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.06em;
+    color: var(--primary-text-color);
+}
+
+.about-wrapper__item{
+    position: relative;
+    padding-left: 32px;
+    margin-bottom: 20px;
+}
+
+.about-wrapper__item:before {
+    background-image: url(../images/check-mark.svg);
+    width: 17px;
+    height: 14px;
+    display: block;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.about-wrapper__text:first-of-type::before {
+    margin-bottom: 16px;
+    display: block;
+    content: '';
+    width: 20px;
+    height: 2px;
+    background-color: #ff6b08;
+}
+
+.about-wrapper__text{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.66;
+    color: #B9B9B9;
+}
+
+.about-wrapper__link{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.66;
+    text-decoration-line: underline;
+    color: #FF6B09;
+    margin-bottom: 8px;
+}
+
 }
