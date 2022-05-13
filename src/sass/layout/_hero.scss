@@ -105,7 +105,7 @@
 }
 
 .hero__image-wrapper {
-    display: flex;
+    display: flex;    
     justify-content: center;
 
     @media screen and (max-width: 767px) {
@@ -125,6 +125,18 @@
         height: 718px;
     }
 }
+.overlay{    
+    background-image: url('/images/bg.jpg');
+    background-color: #E5E5E5;
+    @media screen and (max-width: 767px) {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+    
+    
+            
+}
 
 // .overlay{
 //     position: absolute;
@@ -135,7 +147,7 @@
 //     background-size: cover;
 //     background-repeat: no-repeat;
 //     background-position: center;    
-//     background-image: url('/image/bitch.jpg');
+//     background-image: url('/image/');
 //     background: #FFFFFF;
 //     box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
 //     // @media screen and(max-width:767px) {
@@ -147,24 +159,24 @@
 //     //         }
 //     // }    
 // }
-.overlay {
-    position: absolute;
-    width: 480px;
-    height: 100px;
-    bottom: 10px;
-    left: 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url('/image/bitch.jpg');
-    background-color: #E5E5E5;
-    box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
-    // @media screen and(max-width:767px) {
-    //     background-image: url('/image/Vector.jpg');
-    //     @media (min-device-pixel-ratio: 2),
-    //         (min-resolution: 192dpi),
-    //         (min-resolution: 2dppx) {                
-    //             background-image: url('/image/mobile-hero-bg@2x.jpg');                
-    //         }
-    // }    
-}
+// .overlay {
+//     position: absolute;
+//     width: 480px;
+//     height: 100px;
+//     bottom: 10px;
+//     left: 0;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-image: url('/images/bg.jpg');
+//     background-color: tomato;
+//     box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+//     // @media screen and(max-width:767px) {
+//     //     background-image: url('/image/Vector.jpg');
+//     //     @media (min-device-pixel-ratio: 2),
+//     //         (min-resolution: 192dpi),
+//     //         (min-resolution: 2dppx) {                r
+//     //             background-image: url('/image/mobile-hero-bg@2x.jpg');                
+//     //         }
+//     // }    
+// }
