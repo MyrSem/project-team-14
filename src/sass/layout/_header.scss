@@ -21,7 +21,7 @@
 
   @media screen and (min-width: 768px) {
     width: 128px;
-  height: 45px;
+    height: 45px;
   }
 }
 
@@ -67,6 +67,11 @@
   position: relative;
   padding-top: 20px;
   padding-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 .mobile-menu {
@@ -94,18 +99,28 @@
 .mobile-menu__close-btn {
   position: absolute;
   top: 25px;
-  right: 22px;
+  right: 18px;
   background-color: transparent;
   border: none;
   padding: 0;
   line-height: 0;
   overflow: auto;
+
+  @media screen and (min-width: 768px) {
+    top: 55px;
+  }
 }
 
 .mobile-menu__logo {
   width: 80px;
   height: 29px;
   margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    width: 128px;
+    height: 45px;
+    margin-bottom: 80px;
+  }
 }
 
 .mobile-menu__link {
@@ -118,6 +133,10 @@
 
   &:hover {
     color: var(--brand-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
   }
 }
 
