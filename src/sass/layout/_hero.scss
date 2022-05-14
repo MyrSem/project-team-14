@@ -4,6 +4,9 @@
     @media screen and (min-width: 480px) and (max-width: 767px) {
         padding-bottom: 110px;
     }
+    @media screen and (max-width: 767px) {
+        max-width: 480px;
+    }
     @media screen and (min-width: 768px) {
         width: 768px;
         display: flex;
@@ -15,11 +18,11 @@
     }
 }
 
-.hero__info-wrapper {
+.hero__info-wrapper {    
     @media screen and (max-width: 767px) {
-        width: 280px;
+                
         margin-bottom: 40px;
-    }
+    }    
 
     @media screen and (max-width: 479px) {
         max-width: 479px;
