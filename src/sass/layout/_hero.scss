@@ -1,15 +1,18 @@
-.hero {
-    padding-bottom: 60px;
+.hero {    
 
     @media screen and (min-width: 480px) and (max-width: 767px) {
+        max-width: 480px;
         padding-bottom: 110px;
     }
-    @media screen and (max-width: 767px) {
-        max-width: 480px;
+    
+    @media screen and (max-width: 479px) {
+        padding-bottom: 25%;
+        
     }
     @media screen and (min-width: 768px) {
         width: 768px;
         display: flex;
+        padding-bottom: 60px;
     }
 
     @media screen and (min-width: 1680px) {        
@@ -30,6 +33,9 @@
 
     @media screen and (min-width: 768px) {
         width: 332px;
+    }
+    @media screen and (min-width: 1680px) {
+        width: 560px;
     }
 
 }
@@ -76,8 +82,7 @@
         margin-bottom: 48px;
     }
 
-    @media screen and (min-width: 1680px) {
-        
+    @media screen and (min-width: 1680px) {        
         font-size: 20px;
         line-height: 164.9%;
     }
@@ -88,10 +93,17 @@
 }
 
 .hero__text_secondary--accept {
-    color: var(--brand-color);
-    @media screen and  (min-width: 1680px) {
-        color: var(--primary-text-color);
+    
+    @media screen and (max-width: 1679px) {
+        color: var(--brand-color);
+        word-wrap:break-word;
+        word-break: break-all;        
+        // white-space: pre;
+        
     }
+    // @media screen and  (min-width: 1680px) {
+    //     color: var(--primary-text-color);
+    // }
 }
 
 .button {
