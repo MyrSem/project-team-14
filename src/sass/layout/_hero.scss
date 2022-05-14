@@ -95,11 +95,12 @@
 .hero__text_secondary--accept {
     
     @media screen and (max-width: 1679px) {
-        color: var(--brand-color);
-        word-wrap:break-word;
-        word-break: break-all;        
-        // white-space: pre;
-        
+        color: var(--brand-color);      
+    }
+    @media screen and (min-width: 1680px) {
+        br {
+                display: none;
+            }
     }
     // @media screen and  (min-width: 1680px) {
     //     color: var(--primary-text-color);
@@ -160,8 +161,7 @@
 .overlay{  
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: left 0px bottom -40px;
-    background-color: #E5E5E5;
+    background-position: left 0px bottom -40px;    
     @media screen and (max-width: 767px) { 
 
         background-image: url('/images/mobile-hero-bg.jpg');
