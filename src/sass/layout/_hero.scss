@@ -1,12 +1,15 @@
 .hero {
     padding-bottom: 60px;
 
+    @media screen and (max-width: 767px) {
+        
+    }
     @media screen and (min-width: 768px) {
         width: 768px;
         display: flex;
     }
 
-    @media screen and (min-width: 1680px) {
+    @media screen and (min-width: 1680px) {        
         width: 1680px;
         justify-content: space-between;
     }
@@ -21,7 +24,9 @@
         max-width: 479px;
     }
 
-    @media screen and (min-width: 768px) {}
+    @media screen and (min-width: 768px) {
+        width: 332px;
+    }
 
 }
 
@@ -101,6 +106,10 @@
     @media screen and (min-width: 768px) {
         width: 260px
     }
+    @media screen and (min-width: 1680px) {        
+        padding: 26px 70px;
+        width: 354px;
+    }
 }
 
 .button__link {
@@ -112,7 +121,7 @@
     justify-content: center;
 
     @media screen and (max-width: 767px) {
-        padding-bottom: 110px;
+        
     } 
 
 }
@@ -132,9 +141,10 @@
 .overlay{  
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom;    
+    background-position: left 1px bottom -40px;
     background-color: #E5E5E5;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) { 
+
         background-image: url('/images/mobile-hero-bg.jpg');
         @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
@@ -143,7 +153,7 @@
             }
     }
         @media screen and (min-width: 768px) {
-            background-position: left 1px bottom -40px;
+
             background-image: url('/images/tablet-hero-bg.jpg');
     
             @media (min-device-pixel-ratio: 2),
@@ -153,6 +163,9 @@
             }
         } 
                 @media screen and (min-width: 1680px) {
+                    background-position: left 0px bottom 0px;
+
+
                     background-image: url('/images/desktop-hero-bg.jpg');
         
                     @media (min-device-pixel-ratio: 2),
