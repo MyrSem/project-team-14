@@ -1,0 +1,22 @@
+.advantages-list__item{
+    width: 209px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 164.9%;
+    letter-spacing: 0.08em;
+    color: var(--primary-text-color);
+    &.human-icon::before{
+        display: inline-block;
+        margin-right: 8px;
+            content: '';
+            width: 59px;
+            height: 60px;
+            border: 2px solid var(--brand-color);
+            // border: 2px solid var(--primary-text-color);
+            // cursor: pointer;
+            // border-radius: 2px;
+        background-repeat: no-repeat;
+        background-image: url('/images/human-icon.svg');
+        border-color: var(--brand-color);
+    }
+}
