@@ -1,0 +1,61 @@
+.footer {
+    background-image: linear-gradient(
+        to bottom,
+        #E5E5E5 72.22%,
+        #111518 27.78%
+    );
+}
+
+.footer__container {
+  padding-top: 40px;
+  padding-bottom: 24px;
+  text-align: center;
+}
+
+.footer__logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.footer__logo-icon {
+  width: 80px;
+  height: 29px;
+}
+
+.footer__contact {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.08em;
+  color: var(--primary-text-color);
+
+  &::before {
+    background-image: url("../images/tel.svg");
+  }
+}
+
+.footer__contact-icon {
+width: 20px;
+height: 19px;
+margin-right: 8px;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 64px;
+}
+
+.footer__social-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.footer__rights {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 2;
+  color: var(--secondary-text-color);
+}
