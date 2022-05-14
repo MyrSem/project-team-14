@@ -126,16 +126,18 @@
     justify-content: center;
 
     @media screen and (max-width: 767px) {
-        
+        max-width: 480px;
     } 
 
 }
 
 .picture {
     z-index: 99;
+    
     @media screen and (min-width: 768px) {
         width: 375px;
         height: 320px;
+        
     }
 
     @media screen and (min-width: 1680px) {
