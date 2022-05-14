@@ -1,8 +1,8 @@
 .contacts {
     background-color: #111518;
-    background-image: linear-gradient(0deg,
-            rgba(0, 0, 0, 0.2),
-            rgba(0, 0, 0, 0.2)),
+    background-image: linear-gradient(
+        rgba(17, 21, 24, 0.8),
+        rgba(17, 21, 24, 0.8)),
         url(../images/mobile-contacts-img.jpg);
     background-size: cover;
     text-align: center;
@@ -12,9 +12,8 @@
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .contacts {
-        background-image: linear-gradient(0deg,
-                rgba(0, 0, 0, 0.2),
-                rgba(0, 0, 0, 0.2)),
+        background-image: linear-gradient(rgba(17, 21, 24, 0.8),
+            rgba(17, 21, 24, 0.8)),
             url(../images/mobile-contacts-img@2x.jpg);
     }
 }
@@ -44,23 +43,52 @@
 .contacts-form__name{
     width: 280px;
     height: 48px;
+    padding-left: 28px;
     margin-bottom: 20px;
     border: 1px solid #FFFFFF;
-    background: transparent;
+    background: transparent;color: #FFFFFF;
 }
 .contacts-form__phone {
     width: 280px;
     height: 48px;
+    padding-left: 28px;
     margin-bottom: 40px;
     border: 1px solid #FFFFFF;
-    background: transparent;
+    background: transparent;color: #FFFFFF;
 
 }
+.contacts-form__name::placeholder,
+.contacts-form__phone::placeholder{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    
+    align-items: center;
+    letter-spacing: 0.08em;
+
+    color: #FFFFFF;
+}
 .contacts-submit-btn {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.25;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
     width: 280px;
     height: 48px;
-    border: 1px solid #FFFFFF;
+    border: none;
     background: #FF6B09;
+    & :hover,
+    & :focus{
+    background: #FF6B09;
+    }
+}
+.color-text{
+    color: #FF6B09;
 }
 @media screen and (min-width: 768px) {
     .contacts__title {
@@ -70,16 +98,34 @@
     .contacts__subtitle {
         margin-bottom: 24px;
         font-size: 14px;
-        line-height: 1.2;
+        line-height: 1.21;
     }
-
+   .contacts-form__name{
+        width: 336px;
+    }
+   .contacts-form__phone{
+        width: 336px;
+        margin-bottom: 32px;
+   }
+   
+   .contacts-form__request{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   .contacts-submit-btn{
+        width: 335px;
+   }
+   br{
+       display: none;
+   }
     @media (min-device-pixel-ratio: 1),
     (min-resolution: 96dpi),
     (min-resolution: 1dppx) {
         .contacts {
-            background-image: linear-gradient(0deg,
-                rgba(0, 0, 0, 0.2),
-                rgba(0, 0, 0, 0.2)),
+            background-image: linear-gradient(
+                rgba(17, 21, 24, 0.8),
+                rgba(17, 21, 24, 0.8)),
                 url(../images/tablet-contacts-img.jpg);
         }
     }
@@ -88,9 +134,9 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .contacts {
-            background-image: linear-gradient(0deg,
-                rgba(0, 0, 0, 0.2),
-                rgba(0, 0, 0, 0.2)),
+            background-image: linear-gradient(
+                rgba(17, 21, 24, 0.8),
+                rgba(17, 21, 24, 0.8)),
                 url(../images/tablet-contacts-img@2x.jpg);
         }
     }
@@ -106,14 +152,40 @@
         font-size: 30px;
         line-height: 1.23;
     }
-
+    .contacts-form__name,
+    .contacts-form__phone,
+    .contacts-submit-btn {
+      width: 528px;
+      height: 70px;
+    }
+    .contacts-form__name::placeholder,
+    .contacts-form__phone::placeholder {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+    .contacts-form__name {
+       margin-bottom: 32px;
+    }
+    .contacts-submit-btn {
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.14em;
+    }
+    .contacts-form__request {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+         br {
+             display: none;
+         }
     @media (min-device-pixel-ratio: 1),
     (min-resolution: 96dpi),
     (min-resolution: 1dppx) {
         .contacts {
-            background-image: linear-gradient(0deg,
-                    rgba(0, 0, 0, 0.2),
-                    rgba(0, 0, 0, 0.2)),
+            background-image: linear-gradient(
+                rgba(17, 21, 24, 0.8),
+                rgba(17, 21, 24, 0.8)),
                 url(../images/desktop-contacts-img.jpg);
         }
     }
@@ -122,9 +194,9 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .contacts {
-            background-image: linear-gradient(0deg,
-                    rgba(0, 0, 0, 0.2),
-                    rgba(0, 0, 0, 0.2)),
+            background-image: linear-gradient(
+                rgba(17, 21, 24, 0.8),
+                rgba(17, 21, 24, 0.8)),
                 url(../images/desktop-contacts-img@2x.jpg);
         }
     }

@@ -1,13 +1,13 @@
 <section class="section contacts">
     <div class="container">
-        <h2 class="contacts__title">Registration for a free phone consultation on the nuances of English UPE</h2>
-        <h3 class="contacts__subtitle">Leave a request for participation in a free lesson.
+        <h2 class="contacts__title">Registration for a <span class="color-text">free</span> phone <span class="color-text">consultation</span> on the nuances of English UPE</h2>
+        <h3 class="contacts__subtitle">Leave a request for participation in a <br> <span class="color-text">free lesson</span>.<br>
             A consultant will contact you and answer your questions</h3>
         <div class="subscription">
             <form action="" class="contacts-form">
                 <div class="contacts-form__request">
-                    <input type="name" name="Name*" placeholder="name" class="contacts-form__name">
-                    <input type="number" name="Phone*" placeholder="phone" class="contacts-form__phone">
+                    <input type="text" name="name" placeholder="Name*" class="contacts-form__name" pattern="[a-zA-Za-яеА-ЯЕ]+" title="Аа-Яя,Aa-Zz" minlength="2">
+                    <input type="tel" name="" placeholder="Phone*" class="contacts-form__phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="066-000-00-00" minlength="10" >
                     <button type="submit" class="contacts-submit-btn">i want a free lesson</button>
                 </div>
             </form>
