@@ -2,6 +2,7 @@
     @media screen and (max-width: 479px) {
             max-width: 480px;
         }
+        background: #E5E5E5;
 }
 .advantages-list{
     @media screen and (min-width: 768px) {
@@ -51,6 +52,10 @@
         background-image: url('/images/human-icon.svg');
         background-size: contain;
         background-position: center;
+        @media screen and (min-width: 768px) {
+            background-image: url('/images/tablet-human-icon.svg');
+        }
+
         @media screen and (min-width: 1680px) {
             margin-right: -18px;
             border: transparent;
@@ -69,6 +74,9 @@
         background-image: url('/images/cap-icon.svg');
         background-size: contain; 
         background-position: center;
+        @media screen and (min-width: 768px) {
+                background-image: url('/images/tablet-cap-icon.svg');
+            }
         @media screen and (min-width: 1680px) {
             margin-right: -18px;
             width: 100px;
@@ -86,6 +94,9 @@
         background-image: url('/images/umbrella-icon.svg');
         background-size: contain;
         background-position: center;
+        @media screen and (min-width: 768px) {
+                background-image: url('/images/tablet-umbrella-icon.svg');
+            }
         @media screen and (min-width: 1680px) {
             margin-right: -18px;
             width: 100px;
