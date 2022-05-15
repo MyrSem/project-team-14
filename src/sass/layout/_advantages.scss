@@ -10,6 +10,10 @@
         justify-content: center;
         align-items: center;
     }
+    @media screen and (min-width: 1680px) {
+        justify-content: space-between;
+        width: 1569px;        
+    }
 }
 .advantages-list__item{
     display: flex;
@@ -32,7 +36,11 @@
         &:not(:last-child){
             margin-right: 21px;
         }
-    }    
+    }
+    @media screen and (min-width: 1680px) {
+        font-size: 20px;       
+    }
+    
     &.human-icon::before{
         display: inline-block;
         margin-right: 12px;        
@@ -43,6 +51,13 @@
         background-image: url('/images/human-icon.svg');
         background-size: contain;
         background-position: center;
+        @media screen and (min-width: 1680px) {
+            margin-right: -18px;
+            border: transparent;
+            width: 100px;
+            height: 102px;
+            background-image: url('/images/desktop-human-icon.svg');
+        }
     }
     &.cap-icon::before{
         display: inline-block;
@@ -54,6 +69,12 @@
         background-image: url('/images/cap-icon.svg');
         background-size: contain; 
         background-position: center;
+        @media screen and (min-width: 1680px) {
+            margin-right: -18px;
+            width: 100px;
+            height: 102px;
+                background-image: url('/images/desktop-cap-icon.svg');
+            }
     }
         &.umbrella-icon::before{
         display: inline-block;
@@ -65,6 +86,12 @@
         background-image: url('/images/umbrella-icon.svg');
         background-size: contain;
         background-position: center;
+        @media screen and (min-width: 1680px) {
+            margin-right: -18px;
+            width: 100px;
+            height: 102px;
+            background-image: url('/images/desktop-umbrella-icon.svg');
+            }
         }
 }
 
