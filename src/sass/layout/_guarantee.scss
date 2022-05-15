@@ -1,0 +1,63 @@
+.guarantee {
+    // секція
+
+}
+
+.guarantee__backside {
+    // задній фон
+    padding: 0;
+}
+
+.guarantee__title {
+    // заголовок
+    padding: 0;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-left: auto;
+    max-width: 300px;
+    text-align: center;
+
+    
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 1.30;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+
+.guarantee__frontside {
+    // передній фон
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+
+    background-color: var(--secondary-background-color);
+}
+
+.guarantee__list {
+    // список
+    border-left: 1px dashed #B9B9B9;
+}
+
+
+.guarantee__list-item {
+    // пункт списку
+    margin-bottom: 24px;
+
+}
+
+.guarantee__list-description {
+    // текст пункта
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: 0.08em;
+    color: #3D3D3D;
+}
+
+.guarantee__list-description-primary {
+    // особливий текст пункту
+    color: var(--brand-color);
+}
