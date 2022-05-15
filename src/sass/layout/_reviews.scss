@@ -1,3 +1,13 @@
 .author__avatar {
     clip-path: circle(50% at 50% 50%);
 }
+
+.review__slide--nav.slick-current {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+}
+
+.review__slide--nav.slick-current {
+    border: 1px #FF6B09 solid;
+}
