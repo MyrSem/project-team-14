@@ -1,29 +1,27 @@
-.hero {    
-
+.hero {
+    padding-bottom: 60px;
     @media screen and (min-width: 480px) and (max-width: 767px) {
-        max-width: 480px;
-        padding-bottom: 110px;
+        max-width: 480px;        
     }
     
     @media screen and (max-width: 479px) {
-        padding-bottom: 25%;
+        
         
     }
     @media screen and (min-width: 768px) {
         width: 768px;
-        display: flex;
-        padding-bottom: 60px;
+        display: flex;        
     }
 
     @media screen and (min-width: 1680px) {        
         width: 1680px;
         justify-content: space-between;
+        padding-bottom: 0;
     }
 }
 
 .hero__info-wrapper {    
-    @media screen and (max-width: 767px) {
-                
+    @media screen and (max-width: 767px) {             
         margin-bottom: 40px;
     }    
 
@@ -155,7 +153,9 @@
         height: 718px;
     }
 }
-.overlay{  
+.overlay{
+    width: 100%;
+    background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left 0px bottom -40px;    
@@ -169,8 +169,8 @@
             }
     }
         @media screen and (min-width: 768px) {
-
-            background-position: left 0px bottom -30px;
+            background-position: bottom;
+            
 
             background-image: url('/images/tablet-hero-bg.jpg');
     
@@ -181,8 +181,7 @@
             }
         } 
                 @media screen and (min-width: 1680px) {
-                    background-position: left 0px bottom 0px;
-
+                    background-position: left 0px bottom 20px;
 
                     background-image: url('/images/desktop-hero-bg.jpg');
         
@@ -193,46 +192,3 @@
                     }
                 }
 }
-
-// .overlay{
-//     position: absolute;
-//     width: 100%;
-//     height: 10px;
-//     bottom: 10px;
-//     left: 0;
-//     background-size: cover;
-//     background-repeat: no-repeat;
-//     background-position: center;    
-//     background-image: url('/image/');
-//     background: #FFFFFF;
-//     box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
-//     // @media screen and(max-width:767px) {
-//     //     background-image: url('/image/Vector.jpg');
-//     //     @media (min-device-pixel-ratio: 2),
-//     //         (min-resolution: 192dpi),
-//     //         (min-resolution: 2dppx) {                
-//     //             background-image: url('/image/mobile-hero-bg@2x.jpg');                
-//     //         }
-//     // }    
-// }
-// .overlay {
-//     position: absolute;
-//     width: 480px;
-//     height: 100px;
-//     bottom: 10px;
-//     left: 0;
-//     background-size: cover;
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     background-image: url('/images/bg.jpg');
-//     background-color: tomato;
-//     box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
-//     // @media screen and(max-width:767px) {
-//     //     background-image: url('/image/Vector.jpg');
-//     //     @media (min-device-pixel-ratio: 2),
-//     //         (min-resolution: 192dpi),
-//     //         (min-resolution: 2dppx) {                r
-//     //             background-image: url('/image/mobile-hero-bg@2x.jpg');                
-//     //         }
-//     // }    
-// }
