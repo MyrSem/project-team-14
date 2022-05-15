@@ -3,6 +3,14 @@
             max-width: 480px;
         }
 }
+.advantages-list{
+    @media screen and (min-width: 768px) {
+        width: 688px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
 .advantages-list__item{
     display: flex;
     justify-content: flex-start;
@@ -12,8 +20,18 @@
     line-height: 164.9%;
     letter-spacing: 0.08em;
     color: var(--primary-text-color);
-    &:not(:last-child){
-        margin-bottom: 28px;
+    @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+                margin-bottom: 28px;
+            }
+    }
+    
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+        align-items: center;
+        &:not(:last-child){
+            margin-right: 21px;
+        }
     }    
     &.human-icon::before{
         display: inline-block;
@@ -23,7 +41,8 @@
         height: 60px;                  
         background-repeat: no-repeat;
         background-image: url('/images/human-icon.svg');
-        background-size: contain;               
+        background-size: contain;
+        background-position: center;
     }
     &.cap-icon::before{
         display: inline-block;
@@ -33,7 +52,8 @@
         height: 60px;
         background-repeat: no-repeat;
         background-image: url('/images/cap-icon.svg');
-        background-size: contain;        
+        background-size: contain; 
+        background-position: center;
     }
         &.umbrella-icon::before{
         display: inline-block;
@@ -43,6 +63,8 @@
         height: 60px;
         background-repeat: no-repeat;
         background-image: url('/images/umbrella-icon.svg');
-        background-size: contain;        
+        background-size: contain;
+        background-position: center;
         }
 }
+
