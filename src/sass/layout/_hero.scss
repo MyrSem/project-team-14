@@ -9,12 +9,10 @@
         
     }
     @media screen and (min-width: 768px) {
-        width: 768px;
         display: flex;        
     }
 
     @media screen and (min-width: 1680px) {        
-        width: 1680px;
         justify-content: space-between;
         padding-bottom: 0;
     }
