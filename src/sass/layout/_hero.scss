@@ -18,7 +18,11 @@
     }
 }
 
-.hero__info-wrapper {    
+.hero__info-wrapper {
+    
+    @media screen and (min-width: 768px) and (max-width: 1679px) {
+        margin-left: 10px;
+    }
     @media screen and (max-width: 767px) {             
         margin-bottom: 40px;
     }    
@@ -29,6 +33,7 @@
 
     @media screen and (min-width: 768px) {
         width: 332px;
+        flex-grow: 1;
     }
     @media screen and (min-width: 1680px) {
         width: 560px;
