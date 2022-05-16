@@ -34,6 +34,9 @@
     
     @media screen and (min-width: 768px) and (max-width:1679px){
         justify-content: center;
+        &:first-child{
+            margin-left: 7px;
+        }
                         
         &:not(:last-child){
             margin-right: 21px;
@@ -43,7 +46,7 @@
         font-size: 20px;
         min-width: 366px;
         &:not(:last-child){
-            margin-right: 180px;
+            margin-right: 113px;
         }              
     }
     
