@@ -1,3 +1,8 @@
+.problems {
+  counter-reset: count-problems;
+}
+
+
 .section.problems {
   padding-top: 24px;
   background-image:  linear-gradient(0deg, var(--white-color) 0% 23%, var(--black-color) 23% 77%);
@@ -42,6 +47,11 @@
 
 .problems__item-title__dash {
   @include font(700, 20px, 24px, 0.08em);
+
+  &::after {
+      counter-increment: count-problems;
+      content: counter(count-problems, decimal-leading-zero);
+    }
 }
 
 .problems__item-text {
@@ -126,6 +136,13 @@ background-position: 1243px 19px;
 
   .problems__item-title__dash {
     @include font(700, 20px, 33px, 0.08em);
+
+    &::after {
+        counter-increment: count-problems;
+        content: counter(count-problems, decimal-leading-zero);
+      }
+
+
   }
 
   .problems__item-text {
