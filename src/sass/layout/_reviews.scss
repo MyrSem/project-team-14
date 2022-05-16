@@ -14,15 +14,28 @@
     text-align: center;
 }
 
+.review__article {
+    padding-bottom: 40px;
+}
+
+
+
 .author__avatar {
     clip-path: circle(50% at 50% 50%);
 }
-.social__icon {
+.author__social {
+    display: block;
+
+    margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
+
     width: 30px;
     height: 30px;
-    fill: #436EAB;
+
+    background: no-repeat center center url(.././images/instagram.svg);
+
+    cursor: pointer;
 }
 
 .author__name {
@@ -83,7 +96,6 @@
         text-align: center;
     }
     .author__avatar {
-        margin-bottom: 24px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -101,12 +113,66 @@
 @media screen and (min-width: 1680px) {
 
 }
+//------------Slider--------------//
 .review__slide--nav {
+    position: relative;
     width: 54px;
     height: 54px;
     border-radius: 50%;
-&.slick-current {
+    margin: 0 6px;
+    &.slick-current {
         border: 1px #FF6B09 solid;
     }
 }
 
+.reviews__slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & .slick-list{
+        width: 280px;
+    }
+    
+
+}
+
+.reviews__slider--nav{
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 280px;
+    & .slick-list{
+        width: 190px;
+        padding: 0 4px;
+    }
+
+    & .slick-next {
+        position: absolute;
+        right: 10px;
+        top: 28px;
+
+        background: no-repeat center center url(.././images/arrow_right.jpg);
+        background-size: contain;
+        &::before{
+            content: "";
+        }
+    }
+    & .slick-prev {
+        position: absolute;
+        left: 10px;
+        top: 28px;
+
+        background: no-repeat center center url(.././images/arrow_left.jpg);
+        background-size: contain;
+        &::before{
+            content: "";
+        }
+    }
+}

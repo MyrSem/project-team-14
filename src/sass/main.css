@@ -1564,17 +1564,24 @@ textarea {
   text-align: center;
 }
 
+.review__article {
+  padding-bottom: 40px;
+}
+
 .author__avatar {
   -webkit-clip-path: circle(50% at 50% 50%);
           clip-path: circle(50% at 50% 50%);
 }
 
-.social__icon {
+.author__social {
+  display: block;
+  margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
   width: 30px;
   height: 30px;
-  fill: #436EAB;
+  background: no-repeat center center url(.././images/instagram.svg);
+  cursor: pointer;
 }
 
 .author__name {
@@ -1626,7 +1633,6 @@ textarea {
     text-align: center;
   }
   .author__avatar {
-    margin-bottom: 24px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1639,13 +1645,77 @@ textarea {
 }
 
 .review__slide--nav {
+  position: relative;
   width: 54px;
   height: 54px;
   border-radius: 50%;
+  margin: 0 6px;
 }
 
 .review__slide--nav.slick-current {
   border: 1px #FF6B09 solid;
+}
+
+.reviews__slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.reviews__slider .slick-list {
+  width: 280px;
+}
+
+.reviews__slider--nav {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
+}
+
+.reviews__slider--nav .slick-list {
+  width: 190px;
+  padding: 0 4px;
+}
+
+.reviews__slider--nav .slick-next {
+  position: absolute;
+  right: 10px;
+  top: 28px;
+  background: no-repeat center center url(.././images/arrow_right.jpg);
+  background-size: contain;
+}
+
+.reviews__slider--nav .slick-next::before {
+  content: "";
+}
+
+.reviews__slider--nav .slick-prev {
+  position: absolute;
+  left: 10px;
+  top: 28px;
+  background: no-repeat center center url(.././images/arrow_left.jpg);
+  background-size: contain;
+}
+
+.reviews__slider--nav .slick-prev::before {
+  content: "";
 }
 
 .contacts {
