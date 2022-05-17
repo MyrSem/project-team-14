@@ -8,7 +8,7 @@
 
     @media screen and (min-width: 768px) and (max-width: 1679px) {
             padding-top: 60px;
-            padding-bottom: 180px;
+            padding-bottom: 140px;
         }
     @media screen and (min-width: 1680px) {
         position: relative;
@@ -190,10 +190,13 @@
                 }
             }
 
-    &:not(:last-child) {
-        margin-bottom: 40px;
-    }
 
+    @media screen and (max-width: 1679px) {
+        &:not(:last-child) {
+                margin-bottom: 40px;
+            }
+    }
+    
     @media screen and (min-width: 1680px) {
         width: 240px;
 

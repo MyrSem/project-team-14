@@ -90,6 +90,20 @@
 .color-text{
     color: #FF6B09;
 }
+.contacts-form__name:not(:placeholder-shown):required:valid{
+border-color: #FFFFFF;
+}
+.contacts-form__name:not(:placeholder-shown):required:invalid {
+    border-color: red;
+}
+.contacts-form__phone:not(:placeholder-shown):required:valid {
+    border-color: #FFFFFF;
+}
+
+.contacts-form__phone:not(:placeholder-shown):required:invalid {
+    border-color: red;
+}
+
 @media screen and (min-width: 768px) {
     .contacts-container{
         display: flex;
