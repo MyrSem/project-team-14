@@ -2,7 +2,19 @@
     display: block;
     justify-content: center;
     align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 0;
+        padding-bottom: 40px;
+    }
+
+    @media screen and (min-width: 1680px) {
+        padding-bottom: 80px;
+    }
 }
+
 
 .how-we-do__title {
     font-weight: 800;
