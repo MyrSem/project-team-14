@@ -3,26 +3,24 @@
     margin-left: 0;
     margin-right: 0;
 
-    background-image: linear-gradient(to bottom,
-        var(--background-color) 60%,
-        var(--secondary-background-color) 60%,
-        var(--secondary-background-color) 40%);
+    @media screen and (min-width: 480px) and (max-width: 767px){
+        background-image: linear-gradient(to bottom,
+            var(--background-color) 60%,
+            var(--white-color) 60%,
+            var(--white-color) 40%);
+    }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1679px) {
         background-image: linear-gradient(to bottom,
             var(--background-color) 40%,
-            var(--secondary-background-color) 40%,
-            var(--secondary-background-color) 60%);
+            var(--white-color) 40%,
+            var(--white-color) 60%);
         
     }
 
     @media screen and (min-width: 1680px) {
         padding-top: 0px;
-
-        background-image: linear-gradient(to bottom,
-                    var(--background-color) 50%,
-                    var(--secondary-background-color) 50%,
-                    var(--secondary-background-color) 50%);
+        background-color: var (--secondary-background-color);
     }
 
     counter-reset: count-benefits;
@@ -39,8 +37,12 @@
     }
 
     @media screen and (min-width: 1680px) {
+        position: relative;
+
         padding-right: 0px;
         padding-left: 0px;
+        height: 150px;
+
     }
 }
 
@@ -87,6 +89,14 @@
         padding-right: 92px;
         padding-bottom: 40px;
         padding-left: 92px;
+    }
+    @media screen and (min-width: 1680px) {
+        position: absolute;
+        z-index: 1;
+        top: -200px;
+        left: 16px;
+
+        width: 1648px;
     }
 }
 
