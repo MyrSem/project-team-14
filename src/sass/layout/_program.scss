@@ -190,10 +190,13 @@
                 }
             }
 
-    &:not(:last-child) {
-        margin-bottom: 40px;
-    }
 
+    @media screen and (max-width: 1679px) {
+        &:not(:last-child) {
+                margin-bottom: 40px;
+            }
+    }
+    
     @media screen and (min-width: 1680px) {
         width: 240px;
 
