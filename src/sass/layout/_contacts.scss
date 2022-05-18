@@ -77,15 +77,15 @@
     letter-spacing: 0.08em;
     text-transform: uppercase;
 
-    color: #FFFFFF;
+    color: var(--white-color);
     width: 280px;
     height: 48px;
     border: none;
-    background: #FF6B09;
+    background: var(--brand-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
-    & :hover,
-    & :focus{
+    &:hover,
+    &:focus{
         color: var(--brand-color);
         background-color: transparent;
         border: 2px solid var(--brand-color);

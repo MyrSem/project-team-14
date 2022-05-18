@@ -11,8 +11,10 @@
   function toggleModal() {
     refs.menu.classList.toggle('is-open');
   }
-  document.querySelectorAll(".mobile-menu__link").forEach(link => link.addEventListener('click', closeModal))
-const closeModal = () => {
-	refs.menu.classList.remove("is-open");
-}
+  const closeModal = () => {
+    refs.menu.classList.remove('is-open');
+  };
+  document
+    .querySelectorAll('.mobile-menu__link')
+    .forEach(link => link.addEventListener('click', closeModal));
 })();
