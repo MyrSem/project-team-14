@@ -8,12 +8,48 @@ $(document).ready(function(){
     asNavFor: '.reviews__slider--nav'
   });
   $('.reviews__slider--nav').slick({
-    slidesToShow: 3,
+    slidesToShow: 6,
     slidesToScroll: 1,
     asNavFor: '.reviews__slider',
     arrows: true,
-    centerMode: true,
     focusOnSelect: true,
-    variableWidth: true
+    variableWidth: true,
+    centerMode: true,
+    responsive:[
+    
+      {
+          breakpoint: 768,
+          settings: {
+              slidesToShow:5,
+              slidesToScroll: 1,
+              asNavFor: '.reviews__slider',
+              arrows: true,
+              focusOnSelect: true,
+              variableWidth: true,
+          }
+      },
+      {
+          breakpoint: 440,
+          settings: {
+              slidesToShow:3,
+              slidesToScroll: 1,
+              asNavFor: '.reviews__slider',
+              arrows: true,
+              focusOnSelect: true,
+              variableWidth: true,
+          }
+      },
+      {
+          breakpoint: 240,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.reviews__slider',
+            arrows: true,
+            focusOnSelect: true,
+            variableWidth: true,
+          }
+      }
+    ]
   });
   });
